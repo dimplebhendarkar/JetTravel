@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7825944F24B071E50066730F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825944E24B071E50066730F /* AppDelegate.swift */; };
+		7825945124B071E50066730F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825945024B071E50066730F /* SceneDelegate.swift */; };
+		7825945624B071E50066730F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7825945424B071E50066730F /* Main.storyboard */; };
+		7825945824B071E80066730F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7825945724B071E80066730F /* Assets.xcassets */; };
+		7825945B24B071E80066730F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7825945924B071E80066730F /* LaunchScreen.storyboard */; };
+		7825946624B071E80066730F /* JetTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825946524B071E80066730F /* JetTravelTests.swift */; };
+		7825947124B071E80066730F /* JetTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825947024B071E80066730F /* JetTravelUITests.swift */; };
+		7825948224B0724B0066730F /* JTFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948124B0724B0066730F /* JTFeedViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7825946224B071E80066730F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7825944324B071E50066730F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7825944A24B071E50066730F;
+			remoteInfo = JetTravel;
+		};
+		7825946D24B071E80066730F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7825944324B071E50066730F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7825944A24B071E50066730F;
+			remoteInfo = JetTravel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7825944B24B071E50066730F /* JetTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JetTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7825944E24B071E50066730F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7825945024B071E50066730F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7825945524B071E50066730F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7825945724B071E80066730F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7825945A24B071E80066730F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7825945C24B071E80066730F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7825946124B071E80066730F /* JetTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JetTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7825946524B071E80066730F /* JetTravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JetTravelTests.swift; sourceTree = "<group>"; };
+		7825946724B071E80066730F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7825946C24B071E80066730F /* JetTravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JetTravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7825947024B071E80066730F /* JetTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JetTravelUITests.swift; sourceTree = "<group>"; };
+		7825947224B071E80066730F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7825948124B0724B0066730F /* JTFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTFeedViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7825944824B071E50066730F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7825945E24B071E80066730F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7825946924B071E80066730F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7825944224B071E50066730F = {
+			isa = PBXGroup;
+			children = (
+				7825944D24B071E50066730F /* JetTravel */,
+				7825946424B071E80066730F /* JetTravelTests */,
+				7825946F24B071E80066730F /* JetTravelUITests */,
+				7825944C24B071E50066730F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7825944C24B071E50066730F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7825944B24B071E50066730F /* JetTravel.app */,
+				7825946124B071E80066730F /* JetTravelTests.xctest */,
+				7825946C24B071E80066730F /* JetTravelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7825944D24B071E50066730F /* JetTravel */ = {
+			isa = PBXGroup;
+			children = (
+				7825947E24B072240066730F /* Classes */,
+				7825944E24B071E50066730F /* AppDelegate.swift */,
+				7825945024B071E50066730F /* SceneDelegate.swift */,
+				7825945424B071E50066730F /* Main.storyboard */,
+				7825945724B071E80066730F /* Assets.xcassets */,
+				7825945924B071E80066730F /* LaunchScreen.storyboard */,
+				7825945C24B071E80066730F /* Info.plist */,
+			);
+			path = JetTravel;
+			sourceTree = "<group>";
+		};
+		7825946424B071E80066730F /* JetTravelTests */ = {
+			isa = PBXGroup;
+			children = (
+				7825946524B071E80066730F /* JetTravelTests.swift */,
+				7825946724B071E80066730F /* Info.plist */,
+			);
+			path = JetTravelTests;
+			sourceTree = "<group>";
+		};
+		7825946F24B071E80066730F /* JetTravelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7825947024B071E80066730F /* JetTravelUITests.swift */,
+				7825947224B071E80066730F /* Info.plist */,
+			);
+			path = JetTravelUITests;
+			sourceTree = "<group>";
+		};
+		7825947E24B072240066730F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7825947F24B072330066730F /* Networking */,
+				7825948024B0723B0066730F /* Feed */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7825947F24B072330066730F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7825948024B0723B0066730F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				7825948124B0724B0066730F /* JTFeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7825944A24B071E50066730F /* JetTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7825947524B071E80066730F /* Build configuration list for PBXNativeTarget "JetTravel" */;
+			buildPhases = (
+				7825944724B071E50066730F /* Sources */,
+				7825944824B071E50066730F /* Frameworks */,
+				7825944924B071E50066730F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JetTravel;
+			productName = JetTravel;
+			productReference = 7825944B24B071E50066730F /* JetTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7825946024B071E80066730F /* JetTravelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7825947824B071E80066730F /* Build configuration list for PBXNativeTarget "JetTravelTests" */;
+			buildPhases = (
+				7825945D24B071E80066730F /* Sources */,
+				7825945E24B071E80066730F /* Frameworks */,
+				7825945F24B071E80066730F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7825946324B071E80066730F /* PBXTargetDependency */,
+			);
+			name = JetTravelTests;
+			productName = JetTravelTests;
+			productReference = 7825946124B071E80066730F /* JetTravelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7825946B24B071E80066730F /* JetTravelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7825947B24B071E80066730F /* Build configuration list for PBXNativeTarget "JetTravelUITests" */;
+			buildPhases = (
+				7825946824B071E80066730F /* Sources */,
+				7825946924B071E80066730F /* Frameworks */,
+				7825946A24B071E80066730F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7825946E24B071E80066730F /* PBXTargetDependency */,
+			);
+			name = JetTravelUITests;
+			productName = JetTravelUITests;
+			productReference = 7825946C24B071E80066730F /* JetTravelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7825944324B071E50066730F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = DimpalBhendarkar;
+				TargetAttributes = {
+					7825944A24B071E50066730F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					7825946024B071E80066730F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7825944A24B071E50066730F;
+					};
+					7825946B24B071E80066730F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7825944A24B071E50066730F;
+					};
+				};
+			};
+			buildConfigurationList = 7825944624B071E50066730F /* Build configuration list for PBXProject "JetTravel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7825944224B071E50066730F;
+			productRefGroup = 7825944C24B071E50066730F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7825944A24B071E50066730F /* JetTravel */,
+				7825946024B071E80066730F /* JetTravelTests */,
+				7825946B24B071E80066730F /* JetTravelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7825944924B071E50066730F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7825945B24B071E80066730F /* LaunchScreen.storyboard in Resources */,
+				7825945824B071E80066730F /* Assets.xcassets in Resources */,
+				7825945624B071E50066730F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7825945F24B071E80066730F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7825946A24B071E80066730F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7825944724B071E50066730F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7825944F24B071E50066730F /* AppDelegate.swift in Sources */,
+				7825948224B0724B0066730F /* JTFeedViewController.swift in Sources */,
+				7825945124B071E50066730F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7825945D24B071E80066730F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7825946624B071E80066730F /* JetTravelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7825946824B071E80066730F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7825947124B071E80066730F /* JetTravelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7825946324B071E80066730F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7825944A24B071E50066730F /* JetTravel */;
+			targetProxy = 7825946224B071E80066730F /* PBXContainerItemProxy */;
+		};
+		7825946E24B071E80066730F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7825944A24B071E50066730F /* JetTravel */;
+			targetProxy = 7825946D24B071E80066730F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7825945424B071E50066730F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7825945524B071E50066730F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7825945924B071E80066730F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7825945A24B071E80066730F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7825947324B071E80066730F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7825947424B071E80066730F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7825947624B071E80066730F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JetTravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimpalbhendarkar.JetTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7825947724B071E80066730F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JetTravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimpalbhendarkar.JetTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7825947924B071E80066730F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JetTravelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimpalbhendarkar.JetTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JetTravel.app/JetTravel";
+			};
+			name = Debug;
+		};
+		7825947A24B071E80066730F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JetTravelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimpalbhendarkar.JetTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JetTravel.app/JetTravel";
+			};
+			name = Release;
+		};
+		7825947C24B071E80066730F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JetTravelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimpalbhendarkar.JetTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JetTravel;
+			};
+			name = Debug;
+		};
+		7825947D24B071E80066730F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JetTravelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimpalbhendarkar.JetTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JetTravel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7825944624B071E50066730F /* Build configuration list for PBXProject "JetTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7825947324B071E80066730F /* Debug */,
+				7825947424B071E80066730F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7825947524B071E80066730F /* Build configuration list for PBXNativeTarget "JetTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7825947624B071E80066730F /* Debug */,
+				7825947724B071E80066730F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7825947824B071E80066730F /* Build configuration list for PBXNativeTarget "JetTravelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7825947924B071E80066730F /* Debug */,
+				7825947A24B071E80066730F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7825947B24B071E80066730F /* Build configuration list for PBXNativeTarget "JetTravelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7825947C24B071E80066730F /* Debug */,
+				7825947D24B071E80066730F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7825944324B071E50066730F /* Project object */;
+}
