@@ -21,6 +21,8 @@
 		7825948B24B07D5A0066730F /* JTFeedUIInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948A24B07D5A0066730F /* JTFeedUIInfo.swift */; };
 		7825948F24B084520066730F /* JTNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948E24B084520066730F /* JTNetworkError.swift */; };
 		786E99FD24B088D5000BF4CE /* JTURLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E99FC24B088D5000BF4CE /* JTURLConstants.swift */; };
+		786E9A0024B096F3000BF4CE /* JTArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E99FE24B096F3000BF4CE /* JTArticleTableViewCell.swift */; };
+		786E9A0124B096F3000BF4CE /* JTArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786E99FF24B096F3000BF4CE /* JTArticleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		7825948A24B07D5A0066730F /* JTFeedUIInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTFeedUIInfo.swift; sourceTree = "<group>"; };
 		7825948E24B084520066730F /* JTNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JTNetworkError.swift; path = JetTravel/Classes/JTNetworkError.swift; sourceTree = SOURCE_ROOT; };
 		786E99FC24B088D5000BF4CE /* JTURLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTURLConstants.swift; sourceTree = "<group>"; };
+		786E99FE24B096F3000BF4CE /* JTArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTArticleTableViewCell.swift; sourceTree = "<group>"; };
+		786E99FF24B096F3000BF4CE /* JTArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTArticleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,8 @@
 		7825948D24B0816E0066730F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				786E99FE24B096F3000BF4CE /* JTArticleTableViewCell.swift */,
+				786E99FF24B096F3000BF4CE /* JTArticleTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786E9A0124B096F3000BF4CE /* JTArticleTableViewCell.xib in Resources */,
 				7825945B24B071E80066730F /* LaunchScreen.storyboard in Resources */,
 				7825945824B071E80066730F /* Assets.xcassets in Resources */,
 				7825945624B071E50066730F /* Main.storyboard in Resources */,
@@ -333,6 +340,7 @@
 				7825944F24B071E50066730F /* AppDelegate.swift in Sources */,
 				786E99FD24B088D5000BF4CE /* JTURLConstants.swift in Sources */,
 				7825948224B0724B0066730F /* JTFeedViewController.swift in Sources */,
+				786E9A0024B096F3000BF4CE /* JTArticleTableViewCell.swift in Sources */,
 				7825945124B071E50066730F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
