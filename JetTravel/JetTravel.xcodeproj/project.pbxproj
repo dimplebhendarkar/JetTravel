@@ -15,6 +15,12 @@
 		7825946624B071E80066730F /* JetTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825946524B071E80066730F /* JetTravelTests.swift */; };
 		7825947124B071E80066730F /* JetTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825947024B071E80066730F /* JetTravelUITests.swift */; };
 		7825948224B0724B0066730F /* JTFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948124B0724B0066730F /* JTFeedViewController.swift */; };
+		7825948424B0782B0066730F /* JTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948324B0782B0066730F /* JTNetworkManager.swift */; };
+		7825948724B078770066730F /* JTFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948624B078770066730F /* JTFeed.swift */; };
+		7825948924B07A220066730F /* JTFeedNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948824B07A220066730F /* JTFeedNetworkManager.swift */; };
+		7825948B24B07D5A0066730F /* JTFeedUIInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948A24B07D5A0066730F /* JTFeedUIInfo.swift */; };
+		7825948F24B084520066730F /* JTNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948E24B084520066730F /* JTNetworkError.swift */; };
+		786E99FD24B088D5000BF4CE /* JTURLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E99FC24B088D5000BF4CE /* JTURLConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		7825947024B071E80066730F /* JetTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JetTravelUITests.swift; sourceTree = "<group>"; };
 		7825947224B071E80066730F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7825948124B0724B0066730F /* JTFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTFeedViewController.swift; sourceTree = "<group>"; };
+		7825948324B0782B0066730F /* JTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTNetworkManager.swift; sourceTree = "<group>"; };
+		7825948624B078770066730F /* JTFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTFeed.swift; sourceTree = "<group>"; };
+		7825948824B07A220066730F /* JTFeedNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTFeedNetworkManager.swift; sourceTree = "<group>"; };
+		7825948A24B07D5A0066730F /* JTFeedUIInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTFeedUIInfo.swift; sourceTree = "<group>"; };
+		7825948E24B084520066730F /* JTNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JTNetworkError.swift; path = JetTravel/Classes/JTNetworkError.swift; sourceTree = SOURCE_ROOT; };
+		786E99FC24B088D5000BF4CE /* JTURLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTURLConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,10 @@
 		7825947F24B072330066730F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				7825948E24B084520066730F /* JTNetworkError.swift */,
+				7825948324B0782B0066730F /* JTNetworkManager.swift */,
+				7825948824B07A220066730F /* JTFeedNetworkManager.swift */,
+				786E99FC24B088D5000BF4CE /* JTURLConstants.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -147,9 +163,35 @@
 		7825948024B0723B0066730F /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				7825948D24B0816E0066730F /* Views */,
+				7825948C24B07FFB0066730F /* ViewModel */,
+				7825948524B078630066730F /* Model */,
 				7825948124B0724B0066730F /* JTFeedViewController.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		7825948524B078630066730F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7825948624B078770066730F /* JTFeed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7825948C24B07FFB0066730F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7825948A24B07D5A0066730F /* JTFeedUIInfo.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7825948D24B0816E0066730F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7825948B24B07D5A0066730F /* JTFeedUIInfo.swift in Sources */,
+				7825948F24B084520066730F /* JTNetworkError.swift in Sources */,
+				7825948924B07A220066730F /* JTFeedNetworkManager.swift in Sources */,
+				7825948424B0782B0066730F /* JTNetworkManager.swift in Sources */,
+				7825948724B078770066730F /* JTFeed.swift in Sources */,
 				7825944F24B071E50066730F /* AppDelegate.swift in Sources */,
+				786E99FD24B088D5000BF4CE /* JTURLConstants.swift in Sources */,
 				7825948224B0724B0066730F /* JTFeedViewController.swift in Sources */,
 				7825945124B071E50066730F /* SceneDelegate.swift in Sources */,
 			);
