@@ -15,6 +15,7 @@ class JTArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var minLabel: UILabel!
     @IBOutlet weak var articleImageView: UIImageView!
+    @IBOutlet weak var articleImageViewHeight: NSLayoutConstraint!
     @IBOutlet weak var articleContentLabel: UILabel!
     @IBOutlet weak var articleTitleLabel: UILabel!
     @IBOutlet weak var articleUrlLabel: UILabel!
@@ -40,35 +41,30 @@ class JTArticleTableViewCell: UITableViewCell {
     }
     
     
-    private func setAvatar(imageUrl:String) {
-        
-        DispatchQueue.global(qos: .background).async {
-            let data = self.getImageData(imageUrl: imageUrl)
-            if let imageData = data {
-                DispatchQueue.main.async {
-                    let image = UIImage(data: imageData)
-                    self.avatarImageView.image = image
-                }
+    private func setAvatarIage(_ imageURLString: String?) {
+        guard let urlString = imageURLString else {
+            self.avatarImageView.image = nil
+            return
+        }
+        JTAsyncImageDownloader.instance.downloadImage(withURLString: urlString) { image in
+            DispatchQueue.main.async {
+                self.avatarImageView?.image = image
             }
         }
     }
     
-    private func setArticleImage(imageUrl:String) {
-        DispatchQueue.global(qos: .background).async {
-            let data = self.getImageData(imageUrl: imageUrl)
-            if let imageData = data {
-                DispatchQueue.main.async {
-                    let image = UIImage(data: imageData)
-                    self.articleImageView.image = image
-                }
+    private func setArticleImage(_ imageURLString: String?) {
+        guard let urlString = imageURLString else {
+            self.articleImageView.image = nil
+            self.articleImageViewHeight.constant = 0
+            return
+        }
+        JTAsyncImageDownloader.instance.downloadImage(withURLString: urlString) { image in
+            DispatchQueue.main.async {
+                self.articleImageView?.image = image
+                self.articleImageViewHeight.constant = 200
             }
         }
-    }
-
-    func getImageData(imageUrl:String) -> Data? {
-        guard let  imgUrl = URL(string: imageUrl) else { return nil}
-        let data = try? Data(contentsOf: imgUrl)
-        return data
     }
     
     func configureCell(uiInfo: JTFeedUIInfo) {
@@ -77,13 +73,8 @@ class JTArticleTableViewCell: UITableViewCell {
         self.articleContentLabel.text = uiInfo.content
         self.articleTitleLabel.text = uiInfo.mediaTitle
         self.articleUrlLabel.text = uiInfo.mediaUrl
-        
-        if let avatarImageUrl = uiInfo.avatar {
-            self.setAvatar(imageUrl: avatarImageUrl)
-        }
-        if let articleImageUrl = uiInfo.mediaImage {
-            self.setArticleImage(imageUrl: articleImageUrl)
-        }
+        self.setAvatarIage(uiInfo.avatar)
+        self.setArticleImage(uiInfo.mediaImage)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

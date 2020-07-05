@@ -23,6 +23,8 @@
 		786E99FD24B088D5000BF4CE /* JTURLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E99FC24B088D5000BF4CE /* JTURLConstants.swift */; };
 		786E9A0024B096F3000BF4CE /* JTArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E99FE24B096F3000BF4CE /* JTArticleTableViewCell.swift */; };
 		786E9A0124B096F3000BF4CE /* JTArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786E99FF24B096F3000BF4CE /* JTArticleTableViewCell.xib */; };
+		78B9906E24B1FF91006B3887 /* JTImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9906C24B1FF91006B3887 /* JTImageCache.swift */; };
+		78B9906F24B1FF91006B3887 /* JTAsyncImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9906D24B1FF91006B3887 /* JTAsyncImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		786E99FC24B088D5000BF4CE /* JTURLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTURLConstants.swift; sourceTree = "<group>"; };
 		786E99FE24B096F3000BF4CE /* JTArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTArticleTableViewCell.swift; sourceTree = "<group>"; };
 		786E99FF24B096F3000BF4CE /* JTArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTArticleTableViewCell.xib; sourceTree = "<group>"; };
+		78B9906C24B1FF91006B3887 /* JTImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTImageCache.swift; sourceTree = "<group>"; };
+		78B9906D24B1FF91006B3887 /* JTAsyncImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAsyncImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 				7825948324B0782B0066730F /* JTNetworkManager.swift */,
 				7825948824B07A220066730F /* JTFeedNetworkManager.swift */,
 				786E99FC24B088D5000BF4CE /* JTURLConstants.swift */,
+				78B9906C24B1FF91006B3887 /* JTImageCache.swift */,
+				78B9906D24B1FF91006B3887 /* JTAsyncImageDownloader.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -337,7 +343,9 @@
 				7825948924B07A220066730F /* JTFeedNetworkManager.swift in Sources */,
 				7825948424B0782B0066730F /* JTNetworkManager.swift in Sources */,
 				7825948724B078770066730F /* JTFeed.swift in Sources */,
+				78B9906F24B1FF91006B3887 /* JTAsyncImageDownloader.swift in Sources */,
 				7825944F24B071E50066730F /* AppDelegate.swift in Sources */,
+				78B9906E24B1FF91006B3887 /* JTImageCache.swift in Sources */,
 				786E99FD24B088D5000BF4CE /* JTURLConstants.swift in Sources */,
 				7825948224B0724B0066730F /* JTFeedViewController.swift in Sources */,
 				786E9A0024B096F3000BF4CE /* JTArticleTableViewCell.swift in Sources */,
