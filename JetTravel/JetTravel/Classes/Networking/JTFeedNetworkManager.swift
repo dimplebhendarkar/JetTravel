@@ -16,9 +16,10 @@ class JTFeedNetworkManager {
     static let manager = JTFeedNetworkManager()
     private init() { }
     
-    func getFeed(withSuccess success: @escaping successHandler, withFailuer failure: @escaping failureHandler) {
-                
-        guard let url = URL(string: URL_FEED) else {
+    func getFeed(withPage pageNumber: Int, withSuccess success: @escaping successHandler, withFailuer failure: @escaping failureHandler) {
+        let urlString = URL_FEED.replacingOccurrences(of: "{pageNumber}", with: "\(pageNumber)")
+        print("urlString", urlString)
+        guard let url = URL(string: urlString) else {
             failure(JTNetworkError.invalidURL)
             return
         }

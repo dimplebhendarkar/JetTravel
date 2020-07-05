@@ -11,6 +11,8 @@ import UIKit
 class JTFeedViewController: UIViewController {
  
     private let cellIdentifier = "JTArticleTableViewCell"
+    private var pageNumber = 1
+    private var isEndPageNumber = true
     
     @IBOutlet weak var articleTableView: UITableView!
     
@@ -33,8 +35,9 @@ class JTFeedViewController: UIViewController {
     }
 
     private func setupData() {
-        JTFeedNetworkManager.manager.getFeed(withSuccess: { feedUIInfos in
-            self.feedUIInfos = feedUIInfos
+        JTFeedNetworkManager.manager.getFeed(withPage: self.pageNumber, withSuccess: { feedUIInfos in
+            self.isEndPageNumber = feedUIInfos.count == 0 ? false : true
+            self.feedUIInfos.append(contentsOf: feedUIInfos)
             DispatchQueue.main.async {
                 self.articleTableView.reloadData()
             }
@@ -64,4 +67,11 @@ extension JTFeedViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (self.feedUIInfos.count != 0 && ((self.feedUIInfos.count-2) == indexPath.row) && self.isEndPageNumber) {
+            self.pageNumber = self.pageNumber+1
+            self.setupData()
+        }
+    }
+
 }
