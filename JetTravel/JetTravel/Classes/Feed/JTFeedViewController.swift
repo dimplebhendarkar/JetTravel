@@ -20,7 +20,6 @@ class JTFeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
         // Do any additional setup after loading the view.
         self.navigationItem.title = "Article"
 
@@ -35,15 +34,37 @@ class JTFeedViewController: UIViewController {
     }
 
     private func setupData() {
+        
+        self.showLoadingIndicator()
+        
         JTFeedNetworkManager.manager.getFeed(withPage: self.pageNumber, withSuccess: { feedUIInfos in
             self.isEndPageNumber = feedUIInfos.count == 0 ? false : true
             self.feedUIInfos.append(contentsOf: feedUIInfos)
             DispatchQueue.main.async {
+                self.hideLoadingIndicator()
                 self.articleTableView.reloadData()
             }
         }, withFailuer: { error in
-            
+            DispatchQueue.main.async {
+                self.hideLoadingIndicator()
+                self.showErroAlertController(error?.localizedDescription)
+            }
         })
+    }
+    
+    private func showLoadingIndicator() {
+        JTLoadingIndicator.loading.showLoadingView(withTitle: "Loading page \(self.pageNumber)", viewController: self)
+    }
+    
+    private func hideLoadingIndicator() {
+        JTLoadingIndicator.loading.hideLoadingView()
+    }
+    
+    private func showErroAlertController(_ message: String?) {
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
+        let cancelAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
 

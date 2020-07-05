@@ -21,6 +21,7 @@ class JTArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var articleUrlLabel: UILabel!
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
+    private var feedUIInfo: JTFeedUIInfo!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,8 +39,21 @@ class JTArticleTableViewCell: UITableViewCell {
         self.articleImageView.layer.borderColor = UIColor.gray.cgColor
         self.articleImageView.layer.borderWidth = 1
         self.articleImageView.clipsToBounds = true
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.linkTapped))
+        tapGesture.numberOfTapsRequired = 1
+        self.articleUrlLabel.isUserInteractionEnabled = true
+        self.articleUrlLabel.addGestureRecognizer(tapGesture)
     }
     
+    @objc private func linkTapped() {
+        guard let urlString = self.feedUIInfo.mediaUrl,
+            let url = URL(string: urlString),
+            UIApplication.shared.canOpenURL(url) else {
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
     
     private func setAvatarIage(_ imageURLString: String?) {
         guard let urlString = imageURLString else {
@@ -68,6 +82,7 @@ class JTArticleTableViewCell: UITableViewCell {
     }
     
     func configureCell(uiInfo: JTFeedUIInfo) {
+        self.feedUIInfo = uiInfo
         self.userNameLabel.text = uiInfo.userName
         self.userDesignationLabel.text = uiInfo.userDesignation
         self.articleContentLabel.text = uiInfo.content

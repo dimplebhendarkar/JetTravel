@@ -31,6 +31,7 @@
 		78B9907A24B22B97006B3887 /* JTDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9907924B22B97006B3887 /* JTDate.swift */; };
 		78B9907C24B2360D006B3887 /* JTFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948624B078770066730F /* JTFeed.swift */; };
 		78B9907E24B23827006B3887 /* JTFeedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 78B9907D24B23827006B3887 /* JTFeedResponse.json */; };
+		78E10BD924B23D2B0007FF7C /* JTLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E10BD824B23D2B0007FF7C /* JTLoadingIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		78B9907724B226FA006B3887 /* JTUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTUtility.swift; sourceTree = "<group>"; };
 		78B9907924B22B97006B3887 /* JTDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTDate.swift; sourceTree = "<group>"; };
 		78B9907D24B23827006B3887 /* JTFeedResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JTFeedResponse.json; sourceTree = "<group>"; };
+		78E10BD824B23D2B0007FF7C /* JTLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTLoadingIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 			children = (
 				78B9907724B226FA006B3887 /* JTUtility.swift */,
 				78B9907924B22B97006B3887 /* JTDate.swift */,
+				78E10BD824B23D2B0007FF7C /* JTLoadingIndicator.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				78B9907824B226FA006B3887 /* JTUtility.swift in Sources */,
 				78B9906F24B1FF91006B3887 /* JTAsyncImageDownloader.swift in Sources */,
 				7825944F24B071E50066730F /* AppDelegate.swift in Sources */,
+				78E10BD924B23D2B0007FF7C /* JTLoadingIndicator.swift in Sources */,
 				78B9906E24B1FF91006B3887 /* JTImageCache.swift in Sources */,
 				786E99FD24B088D5000BF4CE /* JTURLConstants.swift in Sources */,
 				7825948224B0724B0066730F /* JTFeedViewController.swift in Sources */,
