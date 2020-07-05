@@ -25,6 +25,12 @@
 		786E9A0124B096F3000BF4CE /* JTArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786E99FF24B096F3000BF4CE /* JTArticleTableViewCell.xib */; };
 		78B9906E24B1FF91006B3887 /* JTImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9906C24B1FF91006B3887 /* JTImageCache.swift */; };
 		78B9906F24B1FF91006B3887 /* JTAsyncImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9906D24B1FF91006B3887 /* JTAsyncImageDownloader.swift */; };
+		78B9907324B2267A006B3887 /* JTFeedUIInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948A24B07D5A0066730F /* JTFeedUIInfo.swift */; };
+		78B9907524B2269A006B3887 /* JTFeedUIInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9907424B2269A006B3887 /* JTFeedUIInfoTests.swift */; };
+		78B9907824B226FA006B3887 /* JTUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9907724B226FA006B3887 /* JTUtility.swift */; };
+		78B9907A24B22B97006B3887 /* JTDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9907924B22B97006B3887 /* JTDate.swift */; };
+		78B9907C24B2360D006B3887 /* JTFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825948624B078770066730F /* JTFeed.swift */; };
+		78B9907E24B23827006B3887 /* JTFeedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 78B9907D24B23827006B3887 /* JTFeedResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +75,10 @@
 		786E99FF24B096F3000BF4CE /* JTArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTArticleTableViewCell.xib; sourceTree = "<group>"; };
 		78B9906C24B1FF91006B3887 /* JTImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTImageCache.swift; sourceTree = "<group>"; };
 		78B9906D24B1FF91006B3887 /* JTAsyncImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAsyncImageDownloader.swift; sourceTree = "<group>"; };
+		78B9907424B2269A006B3887 /* JTFeedUIInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTFeedUIInfoTests.swift; sourceTree = "<group>"; };
+		78B9907724B226FA006B3887 /* JTUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTUtility.swift; sourceTree = "<group>"; };
+		78B9907924B22B97006B3887 /* JTDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTDate.swift; sourceTree = "<group>"; };
+		78B9907D24B23827006B3887 /* JTFeedResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JTFeedResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 		7825946424B071E80066730F /* JetTravelTests */ = {
 			isa = PBXGroup;
 			children = (
+				78B9907024B2263F006B3887 /* Feed */,
 				7825946524B071E80066730F /* JetTravelTests.swift */,
 				7825946724B071E80066730F /* Info.plist */,
 			);
@@ -151,6 +162,7 @@
 		7825947E24B072240066730F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				78B9907624B226DC006B3887 /* Utility */,
 				7825947F24B072330066730F /* Networking */,
 				7825948024B0723B0066730F /* Feed */,
 			);
@@ -204,6 +216,24 @@
 				786E99FF24B096F3000BF4CE /* JTArticleTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		78B9907024B2263F006B3887 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				78B9907424B2269A006B3887 /* JTFeedUIInfoTests.swift */,
+				78B9907D24B23827006B3887 /* JTFeedResponse.json */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		78B9907624B226DC006B3887 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				78B9907724B226FA006B3887 /* JTUtility.swift */,
+				78B9907924B22B97006B3887 /* JTDate.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B9907E24B23827006B3887 /* JTFeedResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +374,7 @@
 				7825948924B07A220066730F /* JTFeedNetworkManager.swift in Sources */,
 				7825948424B0782B0066730F /* JTNetworkManager.swift in Sources */,
 				7825948724B078770066730F /* JTFeed.swift in Sources */,
+				78B9907824B226FA006B3887 /* JTUtility.swift in Sources */,
 				78B9906F24B1FF91006B3887 /* JTAsyncImageDownloader.swift in Sources */,
 				7825944F24B071E50066730F /* AppDelegate.swift in Sources */,
 				78B9906E24B1FF91006B3887 /* JTImageCache.swift in Sources */,
@@ -350,6 +382,7 @@
 				7825948224B0724B0066730F /* JTFeedViewController.swift in Sources */,
 				786E9A0024B096F3000BF4CE /* JTArticleTableViewCell.swift in Sources */,
 				7825945124B071E50066730F /* SceneDelegate.swift in Sources */,
+				78B9907A24B22B97006B3887 /* JTDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +390,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B9907524B2269A006B3887 /* JTFeedUIInfoTests.swift in Sources */,
+				78B9907C24B2360D006B3887 /* JTFeed.swift in Sources */,
 				7825946624B071E80066730F /* JetTravelTests.swift in Sources */,
+				78B9907324B2267A006B3887 /* JTFeedUIInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

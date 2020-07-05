@@ -73,6 +73,9 @@ class JTArticleTableViewCell: UITableViewCell {
         self.articleContentLabel.text = uiInfo.content
         self.articleTitleLabel.text = uiInfo.mediaTitle
         self.articleUrlLabel.text = uiInfo.mediaUrl
+        self.likeLabel.text = uiInfo.getLikes()
+        self.commentLabel.text = uiInfo.getComments()
+        self.minLabel.text = uiInfo.getTime()
         self.setAvatarIage(uiInfo.avatar)
         self.setArticleImage(uiInfo.mediaImage)
     }

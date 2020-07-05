@@ -51,7 +51,16 @@ class JTFeedUIInfo {
     }
     
     func getLikes() -> String {
-        return "\(self.feed.likes)"
+        return self.feed.likes.roundedAbbreviationNumber
+    }
+    
+    func getComments() -> String {
+        return self.feed.comments.roundedAbbreviationNumber
+    }
+    
+    func getTime() -> String {
+        let date = Date().convertDate(fromString: self.feed.createdAt)
+        return Date().timeAgoSinceDate(date: date)
     }
     
     private func getUser() -> JTUser? {
